@@ -29,4 +29,6 @@ let NERDTreeIgnore=['\.pyc$', '\~$']
 
 set foldmethod=indent
 set ruler
+set ignorecase
 colorscheme darkblue
+
