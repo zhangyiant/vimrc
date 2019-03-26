@@ -25,6 +25,7 @@ set encoding=utf-8
 set number
 set foldmethod=indent
 set foldlevel=99
+set showcmd
 let NERDTreeIgnore=['\.pyc$', '\~$']
 
 set foldmethod=indent
