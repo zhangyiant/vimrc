@@ -32,4 +32,5 @@ set foldmethod=indent
 set ruler
 set ignorecase
 colorscheme darkblue
-
+set wildmode=longest:full
+set wildmenu
