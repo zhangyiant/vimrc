@@ -4,12 +4,16 @@ call plug#begin('~/.vim/plugged')
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/vim-lsp'
+Plug 'ryanolsonx/vim-lsp-python'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 call plug#end()
 
 filetype plugin indent on
 
-set guifont=Courier:h24
+let hostname=system("hostname")
+if trim(hostname) == "SHAPC13N2SS"
+    set guifont=Consolas:h14
+endif
 set tabstop=4 
 set softtabstop=4
 set shiftwidth=4
