@@ -10,9 +10,11 @@ call plug#end()
 
 filetype plugin indent on
 
-let hostname=system("hostname")
-if trim(hostname) == "SHAPC13N2SS"
+let hostname=trim(system("hostname"))
+if hostname == "SHAPC13N2SS"
     set guifont=Consolas:h14
+elseif hostname == "home-pc"
+    set guifont=Consolas:h16
 endif
 set tabstop=4 
 set softtabstop=4
